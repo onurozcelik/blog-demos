@@ -12,7 +12,7 @@ import java.util.List;
 @Remote(UserBean.class)
 public class UserBeanImpl implements UserBean, Serializable {
 
-    @PersistenceContext(unitName = "userDatabase")
+    @PersistenceContext(unitName = "default")
     private EntityManager em;
 
     @Override
